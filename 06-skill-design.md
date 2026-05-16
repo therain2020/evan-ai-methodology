@@ -56,8 +56,8 @@ The first audit of a module is expensive — you're building the mental model fr
 ### Why AskUserQuestion Gates?
 
 Two mandatory decision points:
-1. **Phase 0:** Does the user have reference docs? (Changes the audit baseline)
-2. **Post-report:** Fix now, or self-review first?
+1. **Phase 0:** Does the user have reference docs (thesis, design specs, API docs)? If yes, extract design constraints and use them as the audit baseline. Code-doc mismatches become findings.
+2. **Post-report:** Two options — A) Execute fixes immediately (Critical→High→Medium), or B) Self-review the report first to catch missing checks before fixing.
 
 These prevent the audit from being a fire-and-forget report that nobody acts on.
 

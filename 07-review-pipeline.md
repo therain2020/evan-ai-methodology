@@ -82,4 +82,6 @@ The final gate before a PR:
 
 ## The `/dev-flow` Shortcut
 
-`/dev-flow` runs the full pipeline — TDD → simplify → review → health → QA → ship — in sequence with continuous checkpoint WIP commits. Use it for feature work where you want maximum confidence before the PR goes up.
+`/dev-flow` runs the full pipeline — Phase 0 sync → TDD → simplify → review → PUSH → health → QA → ship — in sequence with continuous checkpoint WIP commits and pushes. Use it for feature work where you want maximum confidence before the PR goes up.
+
+**Multi-device support:** Phase 0 pulls remote changes before starting. After stage 3 (review), a PUSH node pushes WIP commits so another device can take over the heavy stages (health compile, QA browser test, ship). Each PUSH marks the commit with `[handoff-desktop]` or `[handoff-mobile]` so the next device knows where to resume.
