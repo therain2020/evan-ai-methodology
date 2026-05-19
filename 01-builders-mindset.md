@@ -19,12 +19,11 @@ The constraint shifts from "how much can I produce" to "how well can I specify w
 
 ## The AI Is Not a Junior Developer
 
-Treating AI as a junior developer who needs detailed instructions is the wrong mental model. A junior developer has common sense but limited knowledge. An AI has encyclopedic knowledge but zero common sense.
+Treating AI as a junior developer who needs detailed instructions is the wrong mental model. A junior developer has common sense but limited knowledge. An AI has seen more code than any human but has zero common sense.
 
-This means:
-- **Over-specify constraints, not steps.** Tell the AI what it CANNOT do, not every step of what it SHOULD do.
-- **Verify, don't trust.** AI will produce plausible-looking wrong answers. Your job is to design verification gates.
-- **Context is currency.** The quality of AI output is proportional to the quality of context you feed it. This is why CLAUDE.md and memory systems matter.
+Key implications:
+
+**Over-specify constraints, not steps.** Tell the AI what it CANNOT do, not every step of what it SHOULD do. **Context is currency.** The quality of output is proportional to the quality of context you feed in — this is why CLAUDE.md and memory systems matter. And **verify, don't trust.** AI produces plausible-looking wrong answers. Your job is to design verification gates.
 
 ## The Role of CLAUDE.md
 
@@ -37,7 +36,7 @@ A good CLAUDE.md answers, before the AI asks:
 - Where do things live?
 - What are the rules I must never break?
 
-The difference between a project with CLAUDE.md and one without is the difference between an AI that needs 3 rounds of clarification and one that produces a working PR on the first attempt.
+A project with CLAUDE.md gets a working PR on the first attempt. One without needs 3 rounds of clarification.
 
 ## Communication as a Skill
 

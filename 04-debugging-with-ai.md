@@ -60,11 +60,9 @@ Once root cause is confirmed:
 
 Traditional debugging is bottlenecked by the developer's ability to hold the codebase in their head. AI changes this:
 
-**Faster Phase 1:** An AI agent can trace a code path across 20 files in seconds, finding all references to a method or variable that a human would need minutes to grep for.
+AI accelerates Phase 1 and Phase 2. An agent can trace a code path across 20 files in seconds — a human would grep for minutes. And it pattern-matches against a larger bug catalog than any developer keeps in their head.
 
-**Better Phase 2:** AI can pattern-match against a catalog of known bug patterns more exhaustively than a human recalling from memory.
-
-**Dangerous Phase 4:** AI will happily generate a fix for the symptom if you don't force it through Phase 3 first. The iron law exists because AI makes symptom-fixing too easy.
+Phase 4 is where it gets dangerous. AI will happily generate a symptom fix if you skip Phase 3. The iron law exists because AI makes symptom-fixing too easy.
 
 ## The `/investigate` Skill
 

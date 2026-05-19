@@ -62,7 +62,7 @@ Three tiers: Quick (critical/high only), Standard (+ medium), Exhaustive (+ cosm
 ## Layer 5: `/ship` — Delivery
 
 The final gate before a PR:
-1. Detect the base branch (usually `master`)
+1. Detect the base branch (usually `main` or `master`)
 2. Run the full test suite one more time
 3. Bump VERSION if configured
 4. Update CHANGELOG
@@ -77,7 +77,7 @@ The final gate before a PR:
 | New feature (no UI) | `/simplify` → `/review` → `/health` |
 | New feature (with UI) | Full pipeline |
 | Refactoring | `/simplify` → `/health` |
-| Security-sensitive change | `/simplify` → `/review` → `/cso` |
+| Security-sensitive change | `/simplify` → `/review` → `/cso` (full security audit) |
 | Before merging any PR | At minimum `/review` + `/health` |
 
 ## The `/dev-flow` Shortcut
